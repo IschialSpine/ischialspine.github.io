@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎀 Photobooth 🎀</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎀 Photobooth Gemas 🎀</h1>
+
+    <video id="camera" autoplay muted playsinline></video>
+
+    <div id="frame-picker">
+      <label>Pilih Frame:</label>
+      <select id="frameSelect">
+        <option value="frame1.png">Frame 1</option>
+        <option value="frame2.png">Frame 2</option>
+      </select>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">Mulai Foto</button>
+      <button id="downloadBtn" style="display:none;">Download</button>
+    </div>
+
+    <div id="countdown"></div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </div>
+
+  <audio id="shutterSound" src="assets/shutter.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
